@@ -13,5 +13,8 @@ public class Inheritance {
 }
 
 class Dog extends Animal {
+    Dog() {
+        sound ="bark";
+    }
 
 }
