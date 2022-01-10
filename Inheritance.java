@@ -3,6 +3,9 @@ public class Inheritance {
         // Dog dog = new Dog();
         // dog.makeSound();
 
+          Thing widget = new Widget();
+        ((Thing)widget).refuseToWork();
+
         Bird bird = new Bird();
         bird.makeSound();
 
@@ -18,6 +21,7 @@ public class Inheritance {
             ((Animal)object).makeSound();
         }
     }
+    
     }
 }
  class Animal {
