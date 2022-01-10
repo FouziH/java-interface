@@ -11,7 +11,13 @@ public class Inheritance {
 
         Object[] list = {new Dog(), new DogFood()};
         // Dog dog = (Dog) list[0];
-      ((Dog)list[0]).makeSound();
+    //   ((Dog)list[1]).makeSound();
+
+    for(Object object: list) {
+        if(object instanceof Animal) {
+            ((Animal)object).makeSound();
+        }
+    }
     }
 }
  class Animal {
@@ -54,4 +60,22 @@ class Person extends  Human {
 
 class DogFood {
 
+}
+
+class Widget extends Thing {
+    String[] excuses = {"It's too heavy.", "I don't know how.", "You know I don't speak Spanish."};
+    int excuseId = 1;
+
+    void refuseToWork() {
+        String excuse = excuses[++excuseId];
+        System.out.println(excuse);
+    }
+}
+
+class Thing {
+    String purpose = "do stuff";
+
+    void printPurpose() {
+        System.out.println(purpose);
+    }
 }
