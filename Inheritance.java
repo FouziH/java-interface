@@ -1,7 +1,7 @@
 public class Inheritance {
     public static void main (String[] args) {
-        Dog dog = new Dog();
-        dog.makeSound();
+        // Dog dog = new Dog();
+        // dog.makeSound();
 
         Bird bird = new Bird();
         bird.makeSound();
@@ -9,7 +9,9 @@ public class Inheritance {
         Person firstPerson = new Person();
         firstPerson.printFullName();
 
-        Object[] list = {new Dog(), new DogFood()}
+        Object[] list = {new Dog(), new DogFood()};
+        Dog dog = (Dog) list[0];
+        dog.makeSound();
     }
 }
  class Animal {
