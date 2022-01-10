@@ -3,3 +3,10 @@ public class Inheritance {
         //write your code here 
     }
 }
+ class Animal {
+     String sound = "";
+     void makeSound () {
+         System.out.println(sound);
+     }
+
+}
