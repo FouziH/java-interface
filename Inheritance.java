@@ -10,8 +10,8 @@ public class Inheritance {
         firstPerson.printFullName();
 
         Object[] list = {new Dog(), new DogFood()};
-        Dog dog = (Dog) list[0];
-        dog.makeSound();
+        // Dog dog = (Dog) list[0];
+      ((Dog)list[0]).makeSound();
     }
 }
  class Animal {
